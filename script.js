@@ -20,6 +20,16 @@ const btnRemoveItems = document.getElementById("btnRemoveItems");
 btnRemoveItems.addEventListener("click", () => {
     const Items = document.querySelectorAll(".itemList");
     Items.forEach(item => item.remove());
-})
+});
 
 // para selecionarmos todos os items com a mesma classe, devemos utilizar o .querySelectorAll(". (nome da classe)")
+
+const btnHideList = document.getElementById("btnHideList");
+btnHideList.addEventListener('change', () =>{
+    if(btnHideList.checked){
+        ul.style.display = "none"
+    }else {
+        ul.style.display = "block";
+    }
+    
+})
