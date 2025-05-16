@@ -5,5 +5,7 @@ btn.addEventListener("click", () => {
 
 const btnAdditems = document.getElementById("btnAdditems");
 btnAdditems.addEventListener("click", () => {
-    document.createElement("li");
+    const li = document.createElement("li");    // criamos o elemento <li>
+    li.textContent = "New item";                // nomeamos o item da lista
+    ul.appendChild(li);                         // Adiciona o <li> a <ul>
 })
