@@ -9,3 +9,8 @@ btnAdditems.addEventListener("click", () => {
     li.textContent = "New item";                // nomeamos o item da lista
     ul.appendChild(li);                         // Adiciona o <li> a <ul>
 })
+
+const btnRemoveList = document.getElementById("btnRemoveList");
+btnRemoveList.addEventListener("click", () => {
+    ul.remove("ul");
+});
