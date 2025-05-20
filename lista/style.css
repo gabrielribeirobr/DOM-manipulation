@@ -5,7 +5,23 @@ body{
     align-items: center;
     height: 70vh;
 }
+.txt{
+    width: 500px;
+}
 
+#ul{
+    padding: 0px;
+}
 .itemWrapper{
     background-color: rgb(99, 214, 223);
+    flex-direction: column;
+
 }
+
+.liItem{
+    display: flex;
+	justify-content: space-between;
+    gap: 3px;
+
+}
+
