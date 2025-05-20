@@ -6,4 +6,12 @@ addBtn.addEventListener("click", () => {
     ul.appendChild(li);
     li.textContent = document.getElementById('txt').value;
 
+    const btnRemove = document.createElement('button');
+    btnRemove.textContent = 'Remover';
+    li.appendChild(btnRemove);
+
+    btnRemove.onclick = function () {
+        li.remove();
+    };
+
 });
